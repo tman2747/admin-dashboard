@@ -46,11 +46,46 @@ body {
   background-color: white;
 }
 
+.top-bar input{
+  width: 600px; /* need to make this a calc() so that it scales with the screen. */
+  height: 30px;
+  border-radius: 10px;
+}
+
 .middle-bar {
+  background-color: white;
   display: flex;
   justify-content: space-between;
 }
 
 li img{
-  vertical-align: sub;
+  vertical-align: sub; /* to help align svgs better to the current text*/
+}
+
+.card{
+  width: 400px;
+  height: 250px;
+  background-color: white;
+  border-left: 10px rgb(240, 162, 26) solid;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.card-title{
+  font-weight: bold;
+}
+
+.card-content{
+
+}
+
+.card-buttons{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+}
+
+.card-buttons > button{
+  margin-right: 10px;
 }

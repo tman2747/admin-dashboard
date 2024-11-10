@@ -89,6 +89,15 @@ body {
   display: flex;
   align-items: center;
 }
+.middle-bar-buttons > li > button{
+  margin-right: 10px;
+  background-color: #3a4a57;
+  color: #21adcb;
+  font-weight: bold;
+  width: 50px;
+  height: 25px;
+  border-radius: 5px;
+}
 
 li img{
   vertical-align: sub; /* to help align svgs better to the current text*/

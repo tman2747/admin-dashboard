@@ -22,9 +22,9 @@ body {
   font-size: large;
   font-weight: bold;
   font-family: sans-serif;
-  background-color: rgba(59,76,86,255);
+  background-color: #21adcb;
   padding: 20px 0px 0px 0px;
-  color: rgba(41,170,192,255);
+  color: white;
 }
 
 .sidebar ul li {
@@ -33,12 +33,15 @@ body {
 
 .sidebar ul li a:link {
   text-decoration: none;
-  color: rgba(41,170,192,255);
+  color: white;
 }
 
 .sidebar ul li a:visited {
   text-decoration: none;
-  color: rgba(41,170,192,255);
+  color: white;
+}
+.sidebar a img {
+  filter: invert(1) brightness(2); /* turn all svgs in the side bar white*/
 }
 
 .menu ul{
@@ -65,12 +68,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: clamp(350px,50%,1000px);
 }
 
 .top-bar input{
-  width: 600px; /* need to make this a calc() so that it scales with the screen. */
-  height: 30px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 1000px; /* need to make this a calc() so that it scales with the screen. */
+  width: clamp(350px,100%,1000px);
+  height: 35px;
   border-radius: 10px;
+  border: 1px solid rgb(200, 200, 200);
 }
 
 .middle-bar {
@@ -88,14 +96,14 @@ body {
 .middle-bar-buttons{
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 .middle-bar-buttons > li > button{
-  margin-right: 10px;
-  background-color: #3a4a57;
-  color: #21adcb;
+  background-color: #21adcb;
+  color: white;
   font-weight: bold;
-  width: 50px;
-  height: 25px;
+  width: 70px;
+  height: 30px;
   border-radius: 5px;
 }
 
@@ -103,11 +111,31 @@ li img{
   vertical-align: sub; /* to help align svgs better to the current text*/
 }
 
+.page-content{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.left-side-content{
+
+}
+
+.left-side-cards{
+  display: flex;
+  gap: 20px;
+  flex-grow: 0;
+  flex-wrap: wrap;
+}
+
+.right-side-content{
+  
+}
+
 .card{
   width: 400px;
   height: 250px;
   background-color: white;
-  border-left: 10px rgba(41,170,192,255) solid;
+  border-left: 10px #21adcb solid;
   padding: 10px;
   border-radius: 10px;
   display: flex;
@@ -119,6 +147,8 @@ li img{
 }
 
 .card-content{
+  width: 40ch;
+  color: rgb(58, 58, 58);
 
 }
 
@@ -130,10 +160,10 @@ li img{
 
 .card-buttons > button{
   margin-right: 10px;
-  background-color: #3a4a57;
-  color: #21adcb;
+  background-color: #21adcb;
+  color: white;
   font-weight: bold;
-  width: 50px;
-  height: 25px;
+  width: 60px;
+  height: 30px;
   border-radius: 5px;
 }

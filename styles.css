@@ -74,8 +74,6 @@ body {
 .top-bar input{
   flex-grow: 1;
   flex-shrink: 1;
-  width: 1000px; /* need to make this a calc() so that it scales with the screen. */
-  width: clamp(350px,100%,1000px);
   height: 35px;
   border-radius: 10px;
   border: 1px solid rgb(200, 200, 200);
@@ -117,7 +115,8 @@ li img{
 }
 
 .left-side-content{
-
+  padding-left: 30px;
+  padding-top: 40px;
 }
 
 .left-side-cards{

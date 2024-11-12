@@ -136,10 +136,11 @@ li img{
 }
 .left-side-header, .right-side-header{
   margin-bottom: 20px;
+  margin-top: 40px;
 }
 .left-side-content{
   padding-left: 30px;
-  padding-top: 40px;
+  padding-bottom: 50px;
 }
 
 .left-side-cards{
@@ -150,9 +151,7 @@ li img{
 }
 
 .right-side-content{
-
   padding-right: 40px;
-  padding-top: 40px;
 }
 
 .card{

@@ -130,6 +130,12 @@ li img{
   vertical-align: sub; /* to help align svgs better to the current text*/
 }
 
+.welcome-message{
+  display: flex;
+}
+.welcome-message img{
+  margin-right: 10px;
+}
 .page-content{
   display: grid;
   grid-template-columns: 3fr 1fr;

@@ -2,10 +2,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: my-cool-font, sans-serif;
   /* for debugging */
 }
-
+@font-face {
+  font-family: my-cool-font;
+  src: url(./fonts/Roboto/Roboto-Regular.ttf);
+}
 body {
   min-height: 100vh;
   background-color: rgb(234,240,241);
@@ -177,9 +180,7 @@ li img{
 }
 
 .card-content{
-  width: 40ch;
   color: rgb(58, 58, 58);
-
 }
 
 .card-buttons{

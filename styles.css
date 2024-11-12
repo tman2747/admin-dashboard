@@ -17,13 +17,19 @@ body {
   height: 100%;
 }
 
+.homepage h2{
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
 .sidebar {
   min-height: 100vh;
   font-size: large;
   font-weight: bold;
   font-family: sans-serif;
   background-color: #21adcb;
-  padding: 20px 0px 0px 0px;
+  padding: 20px 0px 0px 20px;
   color: white;
 }
 
@@ -41,7 +47,7 @@ body {
   color: white;
 }
 .sidebar a img {
-  filter: invert(1) brightness(2); /* turn all svgs in the side bar white*/
+  filter: invert(1) brightness(2); /* turn all svgs in the side bar white -- it messes with some stuff when you highlight everything*/
 }
 
 .menu ul{
@@ -68,7 +74,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: clamp(350px,50%,1000px);
+  width: clamp(350px,70%,1000px);
 }
 
 .top-bar input{
@@ -77,6 +83,19 @@ body {
   height: 35px;
   border-radius: 10px;
   border: 1px solid rgb(200, 200, 200);
+  font-size: 20px;
+  padding-left: 15px;
+}
+input:focus-visible {
+  border: 1px solid rgb(121, 121, 121);
+  outline: none;
+}
+
+.profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 }
 
 .middle-bar {
@@ -121,7 +140,7 @@ li img{
 
 .left-side-cards{
   display: flex;
-  gap: 20px;
+  gap: 30px;
   flex-grow: 0;
   flex-wrap: wrap;
 }
@@ -131,11 +150,11 @@ li img{
 }
 
 .card{
-  width: 400px;
+  width: 450px;
   height: 250px;
   background-color: white;
   border-left: 10px #21adcb solid;
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
